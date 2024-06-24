@@ -1,5 +1,7 @@
 import { useState } from 'react'
 import reactLogo from './assets/react.svg'
+import { UserOutlined } from '@ant-design/icons';
+import { Input } from 'antd';
 import viteLogo from '/vite.svg'
 import './App.css'
 
@@ -17,6 +19,7 @@ function App() {
         </a>
       </div>
       <h1>Vite + React</h1>
+       <Input size="large" placeholder="large size" prefix={<UserOutlined />} />
       <div className="card">
         <button onClick={() => setCount((count) => count + 1)}>
           count is {count}
